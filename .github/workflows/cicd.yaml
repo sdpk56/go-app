@@ -7,10 +7,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'helm/**'
-      - 'k8s/**'
-      - 'README.md'
 
 jobs:
 
@@ -27,7 +23,9 @@ jobs:
         go-version: 1.22
 
     - name: Build
-      run: go build -o main ./src/go/
+      working-directory: ./src/go
+      run: go build -o ../../main
+
 
     - name: Test
       run: go test ./...

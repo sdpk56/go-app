@@ -8,7 +8,7 @@ image:
   repository: mydockd/go-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "15213483445"
+  tag: "15213511008"
 
 ingress:
   enabled: false

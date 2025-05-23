@@ -28,7 +28,8 @@ jobs:
 
 
     - name: Test
-      run: go test ./...
+      working-directory: ./src/go
+      run: go test ../../
   
   code-quality:
     runs-on: ubuntu-latest

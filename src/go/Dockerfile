@@ -1,6 +1,6 @@
 FROM golang:1.22.5
 
-WORKDIR /src/go
+WORKDIR /app
 
 COPY go.mod ./
 

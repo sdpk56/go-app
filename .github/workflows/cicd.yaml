@@ -70,7 +70,7 @@ jobs:
     - name: Build and Push Docker image
       uses: docker/build-push-action@v6
       with:
-        context: .
+        context: ./src/go/
         file: ./src/go/Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/go-app:${{ github.run_id }}
